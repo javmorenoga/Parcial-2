@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@drawable/loginn">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textViewLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Campo de ID -->
+    <EditText
+        android:id="@+id/editTextIdUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del usuario"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de Contraseña -->
+    <EditText
+        android:id="@+id/editTextContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Selector de Rol -->
+    <RadioGroup
+        android:id="@+id/radioGroupRol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrativo"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médico"
+            android:textColor="#000000"
+            android:layout_marginStart="24dp" />
+    </RadioGroup>
+
+    <!-- Botón Login -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>
+
+

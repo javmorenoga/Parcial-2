@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Seleccionar Paciente" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerPacientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="Seleccionar Médico" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+        <Spinner
+            android:id="@+id/spinnerMedicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editTextSintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Síntomas"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextDiagnostico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diagnóstico" />
+
+        <EditText
+            android:id="@+id/editTextTratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tratamiento" />
+
+        <Button
+            android:id="@+id/buttonAsignarConsulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asignar Consulta"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
